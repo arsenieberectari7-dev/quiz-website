@@ -13,8 +13,8 @@ const siteConfig = {
   /** Your website description for SEO */
   description: 'Take fun personality quizzes, discover your true self, and play This or That games. Free, entertaining quizzes about personality, love, lifestyle, and more!',
 
-  /** Your website URL (update when you deploy) */
-  url: 'https://www.quizvibe.com',
+  /** Your website URL (auto-detects current domain) */
+  url: typeof window !== 'undefined' ? window.location.origin : '',
 
   /** Default Open Graph image path */
   ogImage: '/og-image.png',

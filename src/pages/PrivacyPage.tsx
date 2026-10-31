@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import SEOHead from '../components/seo/SEOHead';
 import siteConfig from '../config/siteConfig';
 
@@ -17,8 +18,8 @@ export default function PrivacyPage() {
 
           <div className="prose prose-purple max-w-none text-gray-600 space-y-6 text-sm leading-relaxed">
             <p>
-              Welcome to <strong>{siteConfig.name}</strong> (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;), accessible at{' '}
-              <a href={siteConfig.url} className="text-purple-600 underline">{siteConfig.url}</a>. 
+              Welcome to <strong>{siteConfig.name}</strong> (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;), accessible through{' '}
+              <Link to="/" className="text-purple-600 underline">our website</Link>. 
               We are committed to safeguarding your privacy and ensuring your personal information is treated with dignity and care. 
               This Privacy Policy details how we handle information when you take quizzes, play interactive games, or browse our site.
             </p>
