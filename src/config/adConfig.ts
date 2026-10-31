@@ -67,16 +67,15 @@ export interface AdConfig {
 }
 
 const adConfig: AdConfig = {
-  // ⚠️ Set to true when you have your ad codes ready
-  enabled: false,
+  // Enabled with Adsterra
+  enabled: true,
 
   // Choose your ad network: 'adsterra', 'monetag', or 'none'
-  network: 'none',
+  network: 'adsterra',
 
   adsterra: {
-    enabled: false,
-    // 📋 PASTE YOUR ADSTERRA PUBLISHER ID HERE
-    publisherId: 'YOUR_ADSTERRA_PUBLISHER_ID',
+    enabled: true,
+    publisherId: '4b7d96d3fa152e4b91b0b289b9308595',
     placements: [
       {
         id: 'adsterra-banner-top',
